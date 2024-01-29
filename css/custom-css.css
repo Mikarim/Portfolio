@@ -1,36 +1,53 @@
-
-
-  .topbar-responsive {
+/* 
+  div {
+    border: 2px red solid;
+  } */
+  
+  .orbit .orbit-container {
+    display: flex;
+    justify-content: center;
+  }
+  .orbit .orbit-container .topbar-responsive {
+    position: absolute;
+    z-index: 1;
     background: #2f6d96;
-    padding: 1rem 1.5rem;
+    margin-top: 10px;
+    min-width: 35rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1.5rem;
     border: #ffffff 2px solid;
     border-radius: 25px;
+    backdrop-filter: blur(25px);
   }
   
-  .topbar-responsive .topbar-responsive-logo {
+  .orbit .orbit-container .topbar-responsive .topbar-responsive-logo {
     color: #fefefe;
     vertical-align: middle;
   }
   
-  .topbar-responsive .menu {
-    background: #2f6d96;
+  .orbit .orbit-container .topbar-responsive .menu {
+    background: none;
+    backdrop-filter: blur(25px);
+    
   }
   
-  .topbar-responsive .menu li:last-of-type {
+  .orbit .orbit-container .topbar-responsive .menu li:last-of-type {
     margin-right: 0;
   }
   
-  .topbar-responsive .menu a {
+  .orbit .orbit-container .topbar-responsive .menu a {
     position: relative;
     color: #ffffff;
     text-decoration: none;
   }
   
-  .topbar-responsive .menu a:hover {
+  .orbit .orbit-container .topbar-responsive .menu a:hover {
     color: #ffffff;
   }
   
-  .topbar-responsive .menu a::before {
+  .orbit .orbit-container .topbar-responsive .menu a::before {
     content: "";
     position: absolute;
     display: block;
@@ -44,24 +61,27 @@
     transition: transform 0.3s ease;
   }
   
-  .topbar-responsive .menu a:hover::before {
+  .orbit .orbit-container .topbar-responsive .menu a:hover::before {
     transform: scaleX(0.5);
   }
   
   @media screen and (max-width: 39.9375em) {
-    .topbar-responsive .menu a {
+    .orbit .orbit-container .topbar-responsive {
+      min-width: 20rem;
+    }
+    .orbit .orbit-container .topbar-responsive .menu a {
       padding: 0.875rem 0;
     }
   }
   
-  .topbar-responsive .menu .topbar-responsive-button {
+  .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
     color: #fefefe;
     border-color: #fefefe;
     border-radius: 5000px;
     transition: color 0.15s ease-in, border-color 0.15s ease-in;
   }
   
-  .topbar-responsive .menu .topbar-responsive-button:hover {
+  .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button:hover {
     color: #c6d1d8;
     border-color: #c6d1d8;
   }
@@ -74,14 +94,14 @@
   }
   
   @media screen and (max-width: 39.9375em) {
-    .topbar-responsive {
+    .orbit .orbit-container .topbar-responsive {
       padding: 0.75rem;
     }
-    .topbar-responsive .top-bar-title {
+    .orbit .orbit-container .topbar-responsive .top-bar-title {
       position: relative;
       width: 100%;
     }
-    .topbar-responsive .top-bar-title span {
+    .orbit .orbit-container .topbar-responsive .top-bar-title span {
       position: absolute;
       right: 0;
       border: 1px solid #fefefe;
@@ -92,7 +112,7 @@
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
     }
-    .topbar-responsive .top-bar-title span .menu-icon {
+    .orbit .orbit-container .topbar-responsive .top-bar-title span .menu-icon {
       margin-bottom: 4px;
     }
   }
@@ -138,7 +158,7 @@
   }
   
   @media screen and (max-width: 39.9375em) {
-    .topbar-responsive-links {
+    .orbit .orbit-container .topbar-responsive-links {
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both;
       -webkit-animation-duration: 0.5s;
