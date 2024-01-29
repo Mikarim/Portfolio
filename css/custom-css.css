@@ -1,172 +1,196 @@
-/* 
-  div {
-    border: 2px red solid;
-  } */
-  
-  .orbit .orbit-container {
-    display: flex;
-    justify-content: center;
-  }
+
+@font-face {
+  font-family: Manrope;
+  src: url(../data/font/Manrope-VariableFont_wght.ttf);
+}
+/* div {
+  border: 2px solid red;
+} */
+
+.orbit-container {
+  height: 40rem;
+  width: 100%;
+  background: url("../data/img/bg1.png") center/cover no-repeat;
+  background-size: 100rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.orbit .orbit-container .topbar-responsive {
+  position: absolute;
+  background: #4f46cc6a;
+  backdrop-filter: blur(0.50rem);
+  z-index: 1;
+  margin-top: 10px;
+  min-width: 50%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+}
+
+
+.orbit .orbit-container .topbar-responsive .topbar-responsive-logo {
+  color: #fefefe;
+  vertical-align: middle;
+}
+
+.orbit .orbit-container .topbar-responsive .menu {
+  background: transparent;
+}
+
+.orbit .orbit-container .topbar-responsive .menu li:last-of-type {
+  margin-right: 0;
+}
+
+
+.topbar-responsive a {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu .button, .button a {
+  border:  none;
+  background: #f47423;
+  color: #ffffff;
+}
+
+.menu .button:hover {
+  background: #f47423;
+  color: #ffffff;
+}
+
+
+
+.orbit .orbit-container .topbar-responsive .menu a:hover {
+  color: #f47423;
+}
+
+.orbit .orbit-container .topbar-responsive .menu a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -4px;
+  background-color: #f47423;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.orbit .orbit-container .topbar-responsive .menu a:hover::before {
+  transform: scaleX(0.5);
+}
+
+@media screen and (max-width: 39.9375em) {
   .orbit .orbit-container .topbar-responsive {
-    position: absolute;
-    z-index: 1;
-    background: #2f6d96;
-    margin-top: 10px;
-    min-width: 35rem;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.5rem 1.5rem;
-    border: #ffffff 2px solid;
-    border-radius: 25px;
-    backdrop-filter: blur(25px);
+    min-width: 20rem;
   }
-  
-  .orbit .orbit-container .topbar-responsive .topbar-responsive-logo {
-    color: #fefefe;
-    vertical-align: middle;
-  }
-  
-  .orbit .orbit-container .topbar-responsive .menu {
-    background: none;
-    backdrop-filter: blur(25px);
-    
-  }
-  
-  .orbit .orbit-container .topbar-responsive .menu li:last-of-type {
-    margin-right: 0;
-  }
-  
   .orbit .orbit-container .topbar-responsive .menu a {
-    position: relative;
-    color: #ffffff;
-    text-decoration: none;
+    padding: 0.875rem 0;
   }
-  
-  .orbit .orbit-container .topbar-responsive .menu a:hover {
-    color: #ffffff;
-  }
-  
-  .orbit .orbit-container .topbar-responsive .menu a::before {
-    content: "";
-    position: absolute;
-    display: block;
+}
+
+.orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
+  color: #f47423;
+  border-color: #f47423;
+  border-radius: 5000px;
+  transition: color 0.15s ease-in, border-color 0.15s ease-in;
+}
+
+.orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button:hover {
+  color: #f47423;
+  border-color: #f47423;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu .topbar-responsive-button {
     width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    margin-bottom: -4px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    margin: 0.875rem 0;
   }
-  
-  .orbit .orbit-container .topbar-responsive .menu a:hover::before {
-    transform: scaleX(0.5);
+}
+
+@media screen and (max-width: 39.9375em) {
+  .orbit .orbit-container .topbar-responsive {
+    padding: 0.75rem;
   }
-  
-  @media screen and (max-width: 39.9375em) {
-    .orbit .orbit-container .topbar-responsive {
-      min-width: 20rem;
-    }
-    .orbit .orbit-container .topbar-responsive .menu a {
-      padding: 0.875rem 0;
-    }
+  .orbit .orbit-container .topbar-responsive .top-bar-title {
+    position: relative;
+    width: 100%;
   }
-  
-  .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
-    color: #fefefe;
-    border-color: #fefefe;
-    border-radius: 5000px;
-    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  .orbit .orbit-container .topbar-responsive .top-bar-title span {
+    position: absolute;
+    right: 0;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding: 0.25rem 0.45rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
-  
-  .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button:hover {
-    color: #c6d1d8;
-    border-color: #c6d1d8;
+  .orbit .orbit-container .topbar-responsive .top-bar-title span .menu-icon {
+    margin-bottom: 4px;
   }
-  
-  @media screen and (max-width: 39.9375em) {
-    .topbar-responsive .menu .topbar-responsive-button {
-      width: 100%;
-      margin: 0.875rem 0;
-    }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  @media screen and (max-width: 39.9375em) {
-    .orbit .orbit-container .topbar-responsive {
-      padding: 0.75rem;
-    }
-    .orbit .orbit-container .topbar-responsive .top-bar-title {
-      position: relative;
-      width: 100%;
-    }
-    .orbit .orbit-container .topbar-responsive .top-bar-title span {
-      position: absolute;
-      right: 0;
-      border: 1px solid #fefefe;
-      border-radius: 5px;
-      padding: 0.25rem 0.45rem;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-    }
-    .orbit .orbit-container .topbar-responsive .top-bar-title span .menu-icon {
-      margin-bottom: 4px;
-    }
+  to {
+    opacity: 1;
   }
-  
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  
-  @-webkit-keyframes slideDown {
-    0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(0%);
-              transform: translateY(0%);
-    }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
-  
-  @keyframes slideDown {
-    0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(0%);
-              transform: translateY(0%);
-    }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
-  
-  @media screen and (max-width: 39.9375em) {
-    .orbit .orbit-container .topbar-responsive-links {
-      -webkit-animation-fill-mode: both;
-              animation-fill-mode: both;
-      -webkit-animation-duration: 0.5s;
-              animation-duration: 0.5s;
-      width: 100%;
-      -webkit-animation: fadeIn 1s ease-in;
-              animation: fadeIn 1s ease-in;
-    }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
-  
-  
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .orbit .orbit-container .topbar-responsive-links {
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    width: 100%;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
+}
