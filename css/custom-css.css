@@ -56,19 +56,6 @@
   text-decoration: none;
 }
 
-.menu .button, .button a {
-  border:  none;
-  background: #f47423;
-  color: #ffffff;
-}
-
-.menu .button:hover {
-  background: #f47423;
-  color: #ffffff;
-}
-
-
-
 .orbit .orbit-container .topbar-responsive .menu a:hover {
   color: #f47423;
 }
@@ -102,14 +89,15 @@
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
   color: #f47423;
-  border-color: #f47423;
+  border: none;
   border-radius: 5000px;
+  background: #f47423;
   transition: color 0.15s ease-in, border-color 0.15s ease-in;
 }
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button:hover {
-  color: #f47423;
-  border-color: #f47423;
+  color: #ffffff;
+  background: #ffffff;
 }
 
 @media screen and (max-width: 39.9375em) {
