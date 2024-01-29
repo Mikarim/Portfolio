@@ -88,7 +88,7 @@
 }
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
-  color: #f47423;
+  color: #ffffff;
   border: none;
   border-radius: 5000px;
   background: #f47423;
@@ -96,7 +96,7 @@
 }
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button:hover {
-  color: #ffffff;
+  color: #f47423;
   background: #ffffff;
 }
 
