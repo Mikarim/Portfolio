@@ -3,9 +3,13 @@
   font-family: Manrope;
   src: url(../data/font/Manrope-VariableFont_wght.ttf);
 }
+
+
 /* div {
   border: 2px solid red;
 } */
+
+/* Top-bar avec background  */
 
 .orbit-container {
   height: 40rem;
@@ -17,7 +21,7 @@
 }
 
 
-
+/* top-bar */
 
 .orbit .orbit-container .topbar-responsive {
   position: absolute;
@@ -33,20 +37,19 @@
   border-radius: 25px;
 }
 
+/* mise en forme top-bar right */
 
 .orbit .orbit-container .topbar-responsive .topbar-responsive-logo {
   color: #fefefe;
   vertical-align: middle;
 }
 
+/* mise ne forme top-bar left */
 .orbit .orbit-container .topbar-responsive .menu {
   background: transparent;
 }
 
-.orbit .orbit-container .topbar-responsive .menu li:last-of-type {
-  margin-right: 0;
-}
-
+/* font-style left */
 
 .topbar-responsive a {
   font-family: 'Manrope', sans-serif;
@@ -59,6 +62,8 @@
 .orbit .orbit-container .topbar-responsive .menu a:hover {
   color: #f47423;
 }
+
+/* underline boutons top-bar */
 
 .orbit .orbit-container .topbar-responsive .menu a::before {
   content: "";
@@ -78,6 +83,8 @@
   transform: scaleX(0.5);
 }
 
+/* ajustement pour téléphone */
+
 @media screen and (max-width: 39.9375em) {
   .orbit .orbit-container .topbar-responsive {
     min-width: 20rem;
@@ -86,6 +93,8 @@
     padding: 0.875rem 0;
   }
 }
+
+/* boutons orange top-bar  */
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
   color: #ffffff;
@@ -96,9 +105,23 @@
 }
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button:hover {
-  color: #f47423;
+  color: #f3723b;
   background: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 39.9375em) {
   .topbar-responsive .menu .topbar-responsive-button {
