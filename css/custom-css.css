@@ -12,7 +12,7 @@
 /* Top-bar avec background  */
 
 .orbit-container {
-  height: 40rem;
+  height: 60rem;
   width: 100%;
   background: url("../data/img/bg1.png") center/cover no-repeat;
   background-size: 100rem;
