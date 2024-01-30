@@ -97,6 +97,7 @@
 /* boutons orange top-bar  */
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
+  margin-left: 1em;
   color: #ffffff;
   border: none;
   border-radius: 5000px;
