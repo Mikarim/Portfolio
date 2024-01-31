@@ -12,7 +12,7 @@
 /* Top-bar avec background  */
 
 .orbit-container {
-  height: 60rem;
+  height: 38rem;
   width: 100%;
   background: url("../data/img/bg1.png") center/cover no-repeat;
   background-size: 100rem;
@@ -114,10 +114,50 @@
 
 
 
+/* bottom side code */
+
+.grid-container {
+  width: auto;
+  padding: 30px;
+  background: #4f46cc6a;
+  border-radius: 25px;
+}
+
+.grid-container h2 {
+  height: 2.02em;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 900;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.presentation {
+  display: flex;
+}
+
+.informations hr{
+  margin: 5px 10px 10px;
+  max-width: 25.5rem;
+}
+
+.informations p {
+  color: #f8f6f5;
+  font-family: 'Manrope', sans-serif;
+  width: 80%;
+}
 
 
-
-
+.pdp {
+  display: block;
+  height: 250px;
+  width: 17%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  border: white 3px solid;
+  border-radius: 50px;
+  
+}
 
 
 
@@ -139,6 +179,11 @@
     position: relative;
     width: 100%;
   }
+
+  .menu.simple.vertical.medium-horizontal li, .medium-horizontal li .button.button.hollow.topbar-responsive-button{
+    margin: 0;
+  }
+
   .orbit .orbit-container .topbar-responsive .top-bar-title span {
     position: absolute;
     right: 0;
@@ -151,7 +196,7 @@
             transform: translateY(-50%);
   }
   .orbit .orbit-container .topbar-responsive .top-bar-title span .menu-icon {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 }
 
