@@ -121,42 +121,48 @@
   padding: 30px;
   background: #4f46cc6a;
   border-radius: 25px;
+  margin-bottom: 50px;
 }
 
 .grid-container h2 {
-  height: 2.02em;
+  height: 1.5em;
   color: white;
   font-family: 'Manrope', sans-serif;
   font-weight: 900;
   text-align: left;
-  padding-top: 30px;
+  margin-top: 30px;
+  
 }
 
 .presentation {
   display: flex;
+  margin: 0 auto 0 auto;
+}
+
+.informations{
+  margin-left: 50px;
 }
 
 .informations hr{
   margin: 5px 10px 10px;
   max-width: 25.5rem;
+  width: auto;
 }
 
 .informations p {
   color: #f8f6f5;
   font-family: 'Manrope', sans-serif;
-  width: 80%;
 }
 
 
 .pdp {
-  display: block;
+  align-items: center;
   height: 250px;
-  width: 17%;
-  margin: 0 auto 50px auto;
+  width: auto;
+  margin: 0 auto 0 auto;
   text-align: center;
   border: white 3px solid;
   border-radius: 50px;
-  
 }
 
 
@@ -174,6 +180,30 @@
 @media screen and (max-width: 39.9375em) {
   .orbit .orbit-container .topbar-responsive {
     padding: 0.75rem;
+  }
+  .grid-container {
+    padding: 17px;
+    width: 100%;
+  }
+  .grid-container h2 {
+    margin: 10px 0 10px 0; 
+    width: 100%;
+  }
+  .informations {
+    display: block;
+    padding-left: 20px;
+    margin-left: 0;
+  } 
+  .informations hr {
+    max-width: 10rem;
+  }
+  .informations p {
+    overflow: scroll;
+  }
+  .pdp{
+    top: 20px;
+    bottom: 20px;
+    height: 200px;
   }
   .orbit .orbit-container .topbar-responsive .top-bar-title {
     position: relative;
