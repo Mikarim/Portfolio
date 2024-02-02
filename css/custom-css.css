@@ -173,22 +173,28 @@
 
 .uga-container {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: auto;
   padding: 30px;
-  background: #4f46cc6a;
+  /* background: #4f46cc6a; */
   border-radius: 25px;
   margin-bottom: 50px;
   max-width: 75rem;
   margin: 0 auto;
 }
 
+.jobs-description p{
+  font-family: 'Manrope', sans-serif;
+  margin: 0 auto 0 auto;
+  width: 30rem;
+}
+
 .logo-uga {
   height: 250px;
   width: auto;
   margin: 0 auto 0 auto;
-  text-align: center;
   border: white 3px solid;
   border-radius: 50px;
 }
