@@ -172,6 +172,9 @@
 /* rt informations */
 
 .uga-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
   width: auto;
   padding: 30px;
   background: #4f46cc6a;
@@ -182,7 +185,6 @@
 }
 
 .logo-uga {
-  align-items: center;
   height: 250px;
   width: auto;
   margin: 0 auto 0 auto;
