@@ -49,3 +49,18 @@
     background: #ffffff;
     color: #f3723b;
 }
+
+@media screen and (max-width: 39.9375em) {
+    .middle-grid .grid-container{
+        width: auto;
+        overflow: scroll;
+    }
+    .cv{
+        height: auto;
+        border-radius: 25px;
+        box-shadow: 0 0 0 0; 
+    }
+    .download-button{
+        margin: 0.875rem 0;
+    }
+  }
