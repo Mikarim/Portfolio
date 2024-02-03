@@ -1,0 +1,51 @@
+.orbit-container {
+    height: 40rem;
+    width: 100%;
+    background: url("../data/img/bgcv.png") center/cover no-repeat;
+    background-size: 30rem;
+    display: flex;
+    justify-content: center;
+  }
+
+.middle-grid .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46.5rem;
+}
+.cv {
+    height: 60rem;
+    border-radius: 25px;
+    box-shadow: 0 0 0 0;
+}
+
+.download-button {
+    height: 40px;
+    width: 20rem;
+    border: none;
+    border-radius: 10px;
+    background: #f47423;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+
+.download-button a{
+    padding: 8.1px 70px 8.1px 70px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.download-button:hover {
+    position: relative;
+    background: #ffffff;
+    color: #f3723b;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.download-button a:hover {
+    height: 40px;
+    width: 19rem;
+    background: #ffffff;
+    color: #f3723b;
+}

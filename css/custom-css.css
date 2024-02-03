@@ -10,7 +10,9 @@
 } */
 
 /* Top-bar avec background  */
-
+p {
+  font-family: 'Manrope', sans-serif;
+}
 .orbit-container {
   height: 38rem;
   width: 100%;
@@ -40,6 +42,7 @@
 /* mise en forme top-bar right */
 
 .orbit .orbit-container .topbar-responsive .topbar-responsive-logo {
+  font-size: 20px;
   color: #fefefe;
   vertical-align: middle;
 }
@@ -60,6 +63,7 @@
 }
 
 .orbit .orbit-container .topbar-responsive .menu a:hover {
+  flex-direction: column;
   color: #f47423;
 }
 
@@ -100,7 +104,6 @@
 /* boutons orange top-bar  */
 
 .orbit .orbit-container .topbar-responsive .menu .topbar-responsive-button {
-  margin-left: 1em;
   color: #ffffff;
   border: none;
   border-radius: 5000px;
@@ -112,8 +115,6 @@
   color: #f3723b;
   background: #ffffff;
 }
-
-
 
 
 
@@ -134,7 +135,6 @@
   font-weight: 900;
   text-align: left;
   margin-top: 30px;
-  
 }
 
 .presentation {
@@ -198,6 +198,63 @@
   margin: 0 100px 0 100px;
   border: white 3px solid;
 }
+
+
+/* footer */
+
+.callout.large.secondary{
+  width: auto;
+  padding: 30px;
+  background: #4f46cc6a;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  max-width: 75rem;
+  padding: 0;
+  margin: 50px auto 50px auto;
+  border: none;
+}
+
+.grid-x{
+  display: flex;
+  justify-content: space-around;
+}
+
+.reseaux .menu.vertical{
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.contact, .reseaux{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact p{
+  color: #f8f6f5;
+  margin: 0px;
+}
+
+.reseaux :where(a, i){
+  font-size: 25px;
+  color: #f8f6f5;
+}
+
+.contact a{
+  font-size: 16px;
+  color: #f8f6f5;
+}
+
+.contact a:hover{
+  color: #f8f6f5;
+  text-decoration: underline;
+}
+
+
+
+
+
+
 
 
 
