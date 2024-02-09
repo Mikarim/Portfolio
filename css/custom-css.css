@@ -14,7 +14,7 @@ p {
   font-family: 'Manrope', sans-serif;
 }
 .orbit-container {
-  height: 38rem;
+  height: 47rem;
   width: 100%;
   background: url("../data/img/bg1.png") center/cover no-repeat;
   background-size: 100rem;
@@ -64,7 +64,7 @@ p {
 
 .orbit .orbit-container .topbar-responsive .menu a:hover {
   flex-direction: column;
-  color: #f47423;
+  color: #4f4bbd;
 }
 
 /* underline boutons top-bar */
@@ -78,7 +78,7 @@ p {
   bottom: 0;
   left: 0;
   margin-bottom: -4px;
-  background-color: #f47423;
+  background-color: #4f4bbd;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -107,7 +107,7 @@ p {
   color: #ffffff;
   border: none;
   border-radius: 5000px;
-  background: #f47423;
+  background: #4f4bbd;
   transition: color 0.15s ease-in, border-color 0.15s ease-in;
 }
 
@@ -188,14 +188,14 @@ p {
 .jobs-description p{
   text-align: center;
   font-family: 'Manrope', sans-serif;
-  margin: 0 auto 0 auto;
+  margin:  0 60px 0 20px;
   width: 30rem;
 }
 
 .logo-uga {
   height: 170px;
-  width: auto;
-  margin: 0 100px 0 100px;
+  width: auto; 
+  margin: 20px;
   border: white 3px solid;
 }
 
@@ -235,10 +235,10 @@ p {
   margin: 0px;
 }
 
-.reseaux :where(a, i){
+/* .reseaux :where(a, i){
   font-size: 25px;
   color: #f8f6f5;
-}
+} */
 
 .contact a{
   font-size: 16px;
@@ -251,7 +251,74 @@ p {
 }
 
 
+/* social media  */
 
+.reseaux .menu.vertical {
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+.reseaux .menu.vertical li {
+  list-style: none;
+}
+
+.reseaux .menu.vertical li a {
+  position: relative;
+  width:40px;
+  height:40px;
+  display:block;
+  text-align:center;
+  justify-content: right;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+.reseaux .menu.vertical li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.reseaux .menu.vertical li a .fa {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(40px - 12px);
+  font-size:24px;
+  color: #726ad6;
+  transition: .5s;
+}
+
+.reseaux .menu.vertical li:nth-child(1) a:hover .fa {
+  color: #010409;
+}
+
+.reseaux .menu.vertical li:nth-child(2) a:hover .fa {
+  color: #00aced;
+}
+
+.reseaux .menu.vertical li:nth-child(3) a:hover .fa {
+  color: #dd4b39;
+}
+
+.reseaux .menu.vertical li:nth-child(4) a:hover .fa {
+  color: #007bb6;
+}
+
+/* .reseaux .menu.vertical li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+} */
 
 
 
@@ -312,8 +379,6 @@ p {
   .orbit .orbit-container .topbar-responsive .top-bar-title span {
     position: absolute;
     right: 0;
-    border: 1px solid #fefefe;
-    border-radius: 5px;
     padding: 0.25rem 0.45rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -322,6 +387,14 @@ p {
   }
   .orbit .orbit-container .topbar-responsive .top-bar-title span .menu-icon {
     margin-bottom: 6px;
+  }     
+
+
+  .jobs-description p{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    margin: auto;
+    width: 23rem;
   }
 }
 

@@ -16,7 +16,7 @@
 .cv {
     height: 60rem;
     border-radius: 25px;
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 10px 15px rgba(0.3,0.3,0.3,0.3);
 }
 
 .download-button {
@@ -24,7 +24,7 @@
     width: 20rem;
     border: none;
     border-radius: 10px;
-    background: #f47423;
+    background: #4f4bbd;
     transition: color 0.15s ease-in, border-color 0.15s ease-in;
   }
 
@@ -38,7 +38,7 @@
 .download-button:hover {
     position: relative;
     background: #ffffff;
-    color: #f3723b;
+    color: #4f4bbd;
     text-decoration: none;
     border-radius: 10px;
 }
@@ -47,7 +47,7 @@
     height: 40px;
     width: 19rem;
     background: #ffffff;
-    color: #f3723b;
+    color: #4f4bbd;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -58,7 +58,7 @@
     .cv{
         height: auto;
         border-radius: 25px;
-        box-shadow: 0 0 0 0; 
+        box-shadow: -3px 4px 17px 0;
     }
     .download-button{
         margin: 0.875rem 0;
