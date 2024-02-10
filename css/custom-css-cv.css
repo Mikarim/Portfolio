@@ -1,22 +1,89 @@
 .orbit-container {
-    height: 40rem;
+    position: relative;
+    height: auto;
     width: 100%;
     background: url("../data/img/bgcv.png") center/cover no-repeat;
-    background-size: 30rem;
+    background-size: 150vh;
     display: flex;
     justify-content: center;
   }
 
-.middle-grid .grid-container {
+.orbit .orbit-container .topbar-responsive .menu {
+    background: transparent;
+    margin-right: 30px;
+}
+
+.middle-grid .grid-container{
+    background-color: #b5b3e8dd;
+    backdrop-filter: blur(0.50rem);
+    border-radius: 20px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 46.5rem;
+    width: 100%;
 }
-.cv {
-    height: 60rem;
-    border-radius: 25px;
-    box-shadow: 0 10px 15px rgba(0.3,0.3,0.3,0.3);
+
+.download .grid-container{
+    margin-top: 15rem;
+}
+
+.description-container{
+    background-color: #b5b3e8dd;
+    backdrop-filter: blur(0.50rem);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.intro, .exp-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 900px;
+}
+
+.intro-desc {
+    margin: 30px;
+    top: 100%;
+}
+.intro-desc h2, .exp-container h2 {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    margin: 0;
+}
+.intro-desc h5, .intro-desc p {
+    color: #0a0a0a;
+    text-align: left;
+}
+
+
+.formations {
+    width: 35rem;
+    margin: 20px;
+    text-align: left;
+}
+
+.exp-pro {
+    margin: 20px;
+    width: 35rem;
+}
+
+.soft-skills, .centre-interet, .competences {
+    margin: 20px;
+    padding: auto;
+    width: 35rem;
+}
+
+.exp-container p {
+    margin: 0;
 }
 
 .download-button {
@@ -62,5 +129,10 @@
     }
     .download-button{
         margin: 0.875rem 0;
+    }
+    .exp-container, .intro {
+        width: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
   }
