@@ -10,7 +10,6 @@
 
 .orbit .orbit-container .topbar-responsive .menu {
     background: transparent;
-    margin-right: 30px;
 }
 
 .middle-grid .grid-container{
@@ -25,7 +24,7 @@
 }
 
 .download .grid-container{
-    margin-top: 15rem;
+    margin-top: 20rem;
 }
 
 .description-container{
@@ -118,10 +117,22 @@
 }
 
 @media screen and (max-width: 39.9375em) {
-    .middle-grid .grid-container{
-        width: auto;
-        overflow: scroll;
+    .middle-grid{
+        min-width: 414px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
+    .description-container{
+        display: flex;
+        width: auto;
+    }
+    .formations, .exp-pro, .competences, .soft-skills, .centre-interet{
+        width: auto;
+        flex-wrap: nowrap;
+    }
+
     .cv{
         height: auto;
         border-radius: 25px;
