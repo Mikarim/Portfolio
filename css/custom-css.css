@@ -14,10 +14,12 @@
 p {
   font-family: 'Manrope', sans-serif;
 }
+
 .orbit-container {
   height: 60rem;
   width: 100%;
   background: url("../data/img/bg1.png") center/cover no-repeat;
+  background-color: white;
   background-size: 100rem;
   display: flex;
   justify-content: center;

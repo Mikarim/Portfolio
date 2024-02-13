@@ -1,7 +1,7 @@
 .orbit-container {
     position: relative;
     width: 100%;
-    background: url("../data/img/bgzoom.png") center/cover no-repeat;
+    background: url("../data/img/error404.png") center/cover no-repeat;
     background-size: 150vh;
     display: flex;
     justify-content: center;
@@ -10,8 +10,8 @@
 .middle-grid .grid-container{
     background-color: #b5b3e8dd;
     backdrop-filter: blur(0.50rem);
-    border-radius: 20px;
     margin-top: 20rem;
+    border-radius: 20px;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -19,6 +19,14 @@
     width: 100%;
 }
 
-/* .projetbac {
+.no-works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-} */
+.no-works h2 {
+    text-align: center;
+    margin: 0;
+}

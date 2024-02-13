@@ -43,7 +43,6 @@
 .intro, .exp-container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width: 900px;
 }
 
@@ -51,7 +50,8 @@
     margin: 30px;
     top: 100%;
 }
-.intro-desc h2, .exp-container h2 {
+
+.intro-desc h2, .exp-container h2, .skills-container h2 {
     color: white;
     font-family: 'Manrope', sans-serif;
     font-weight: 900;
@@ -75,13 +75,17 @@
     width: 35rem;
 }
 
-.soft-skills, .centre-interet, .competences {
-    margin: 20px;
-    padding: auto;
-    width: 35rem;
+.skills-container{
+    display: grid;
+    grid-template-columns: 28rem 28rem;
 }
 
-.exp-container p {
+.centre-interet, .competences, .pp, .soft-skills{
+    margin: 20px;
+    padding: auto;
+}
+
+.exp-container p, .skills-container p{
     margin: 0;
 }
 
@@ -124,23 +128,33 @@
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
     .description-container{
         display: flex;
         width: auto;
     }
-    .formations, .exp-pro, .competences, .soft-skills, .centre-interet{
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .formations, .exp-pro, .competences, .pp, .centre-interet {
         width: auto;
         flex-wrap: nowrap;
     }
 
-    .cv{
+    .cv {
         height: auto;
         border-radius: 25px;
         box-shadow: -3px 4px 17px 0;
     }
+
     .download-button{
         margin: 0.875rem 0;
     }
+    
     .exp-container, .intro {
         width: auto;
         flex-direction: column;
