@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     background: url("../data/img/bgzoom.png") center/cover no-repeat;
-    background-size: 120vh;
+    background-size: 200vh;
     display: flex;
     justify-content: center;
 }
@@ -28,7 +28,8 @@
 }
 
 .imgproj, .maquetteimg{
-    width: auto;
+    width: 100%;
+    max-width: 550px;
     border: white 3px solid;
     border-radius: 50px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
