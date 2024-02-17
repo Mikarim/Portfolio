@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zoom - Bazzaro Mikael</title>
+    <title>Contact - Bazzaro Mikael</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/custom-css.css">
-    <link rel="stylesheet" href="./css/custom-css-zoom.css">
+    <link rel="stylesheet" href="./css/custom-css-contact.css">
   </head>
 
   <header>
@@ -26,11 +26,11 @@
             <div class="top-bar-left">
               <ul class="menu simple vertical medium-horizontal">
                 <li><a href="./cv.html"><i class="fa-regular fa-file-lines">&nbsp</i>CV</a></li>
-                <li><a href="./contact.html"><i class="fa-regular fa-comments">&nbsp</i>Contact</a></li>
-                <li><a href="./index.html"><i class="fa-solid fa-house">&nbsp</i>Accueil</a></li>
                 <li>
-                  <button type="button" class="button hollow topbar-responsive-button"><a href="#"><i class="fa-solid fa-magnifying-glass">&nbsp</i>Zoom</a></button>
+                  <button type="button" class="button hollow topbar-responsive-button"><a href="#"><i class="fa-regular fa-comments">&nbsp</i>Contact</a></button>
                 </li>
+                <li><a href="./index.html"><i class="fa-solid fa-house">&nbsp</i>Accueil</a></li>
+                <li><a href="./a-propos.html"><i class="fa-solid fa-magnifying-glass">&nbsp</i>Zoom</a></li>
                 <li><a href="./travaux-temp.html"><i class="fa-solid fa-network-wired">&nbsp</i>Travaux</a></li>
               </ul>
             </div>
@@ -38,45 +38,34 @@
         </nav>
         <body>
           <div class="middle-grid">
-            <article class="grid-container">
-              <section class="projetbac">
-                <img class="imgproj" src="./data/img/olympiades-sciences_ingé.png" alt="">
-                <div class="intro-projet">
-                  <h2>Olympiades de Sciences de l'Ingénieur</h2>
-                  <br>
-                  <p>Nous avons développé un projet innovant avant de le présenter en 8 minutes 
-                    chrono devant un jury d'experts et d'une vingtaine de collégiens. Nous avons 
-                    voulu créer une piste cyclable, renouvelable, accessible à tout instant de jour 
-                    comme de nuit avec une alimentation électrique solaire et un système d'éclairage 
-                    autonome.</p>
-                </div>
-              </section>
-            </article>
-            <article class="rea-container">
-              <div class="realisation">
-                <div class="detail-projet">
-                  <h2>La réalisation</h2>
-                  <br>
-                  <p>Comme support de projet, nous avons décidé de faire une maquette à l'échelle 1/10ème.
-                    Nous avons réalisé un réseau électrique avec des panneaux solaires alimentant des LED pour simuler l'éclairage.
-                    Enfin, tout ce système était raccordé à une carte électronique permettant d'allumer les LEDs quand une personne était détectée.
-                  </p>
-                  <br>
-                  <h2>Compétences</h2>
-                  <li><p><i class="fa-solid fa-clipboard-question">&nbsp&nbsp</i>Gestion de projet (GANT, cahier des charges)</p></li>
-                  <li><p><i class="fa-solid fa-comments">&nbsp&nbsp</i>Communication avec exploitation du projet</p></li>
-                  <li><p><i class="fa-solid fa-lightbulb">&nbsp&nbsp</i>Réalisation d'un système domotique (cablage, soudures)</p></li>
-                  <li><p><i class="fa-solid fa-microchip">&nbsp&nbsp</i>Programmation du système domotique (langage C)</p></li>
-                </div>
-                <img class="maquetteimg" src="./data/img/realisation_maquette.png" alt="">
-              </div>
-            </article>
-            <article class="rea-container">
-              <div class="groupe">
-                <h2>Mon Groupe</h2>
-                <p>Bonny Célian, Curtaud Maxime, Paganon Camille et Bazzaro Mikael</p>
-              </div>
-            </article>
+            <div class="grid-container">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <h1 class="title text-center mb-4">Me Contacter</h1>
+                <input type="hidden" name="access_key" value="756dd3ef-e782-4be2-8d05-793f3b813594">
+                  <div class="form-group position-relative">
+                    <label for="formName" class="d-block">
+                      <i class="fa-regular fa-user" data-feather="user" id="icon"></i>
+                    </label>
+                    <input type="text" name="name" id="formName" class="form-control form-control-lg thick" placeholder="Nom">
+                  </div>
+  
+                  <div class="form-group position-relative">
+                    <label for="formEmail" class="d-block">
+                      <i class="fa-regular fa-envelope" data-feather="email" id="icon"></i>
+                    </label>
+                    <input type="email" name="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+                  </div>
+  
+                  <div class="form-group message">
+                    <textarea name="message" id="formMessage" class="form-control form-control-lg"  rows="7"  placeholder="Message"></textarea>
+                  </div>
+                
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary" tabIndex="-1">Envoyer le message</button>
+                  </div>
+              </form>
+            </div>
+            <img class="contactimg" src="./data/img/contactimg.png" alt="">
           </div>
         </body>
       </div>
@@ -116,3 +105,5 @@
   <script src="./data/js/topbar.js"></script>
   
 </html>
+
+
