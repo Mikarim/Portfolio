@@ -13,6 +13,9 @@
     align-items: center;
     margin: 10rem 0 10rem 0;
 }
+.menu.medium-horizontal .button-set-contact{
+  margin: 0 15px 0 25px;
+}
 
 .middle-grid .grid-container {
   background-color: #b5b3e8dd;

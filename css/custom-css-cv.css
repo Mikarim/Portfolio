@@ -24,7 +24,7 @@
 }
 
 .download .grid-container{
-    margin-top: 20rem;
+    margin-top: 15rem;
 }
 
 .description-container{
@@ -118,6 +118,9 @@
     width: 19rem;
     background: #ffffff;
     color: #4f4bbd;
+}
+.menu.medium-horizontal li {
+    margin-left: 0;
 }
 
 @media screen and (max-width: 39.9375em) {

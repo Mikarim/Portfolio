@@ -19,6 +19,10 @@
     width: 100%;
 }
 
+.menu.medium-horizontal .button-set {
+    margin-right: 0;
+}
+
 .no-works{
     display: flex;
     flex-direction: column;
