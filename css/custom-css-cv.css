@@ -119,9 +119,6 @@
     background: #ffffff;
     color: #4f4bbd;
 }
-.menu.medium-horizontal li {
-    margin-left: 0;
-}
 
 @media screen and (max-width: 39.9375em) {
     .download{
