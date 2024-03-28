@@ -11,7 +11,7 @@
 
 /* Top-bar avec background  */
 
-p {
+p, h1, h2, h3, a {
   font-family: 'Manrope', sans-serif;
 }
 
@@ -91,6 +91,9 @@ p {
   display: none;
 }
 
+.iconfleche::after{
+  content: " ▾";
+}
 
 .deroulant {
   position: relative;
@@ -100,7 +103,7 @@ p {
 .deroulant:hover .sous {
   color: #ffffff;
   border-radius: 20px;
-  top: 20px;
+  top: 19px;
   left: -40px;
   padding: 15px;
   background-color: #726ad6;
@@ -117,13 +120,13 @@ p {
     top: 5px;
   }
   100% {
-    top: 19px;
+    top: 18px;
   }
 }
 
 @keyframes move-up {
   0% {
-    top: 19px;
+    top: 18px;
   }
   100% {
     top: 0;

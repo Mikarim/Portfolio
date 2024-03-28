@@ -1,10 +1,14 @@
 .orbit-container {
     position: relative;
     width: 100%;
-    background: url("../data/img/error404.png") center/cover no-repeat;
+    background: url("/bazzarom/data/img/background-sae201.png") center/cover no-repeat;
     background-size: 150vh;
     display: flex;
     justify-content: center;
+}
+
+.orbit .orbit-container .topbar-responsive .menu{
+    padding: 0.7rem 1rem;
 }
 
 .middle-grid .grid-container{
