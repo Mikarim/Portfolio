@@ -14,8 +14,8 @@
 .middle-grid .grid-container{
     background-color: #b5b3e8dd;
     backdrop-filter: blur(0.50rem);
-    margin-top: 20rem;
     border-radius: 20px;
+    margin: 0;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -23,18 +23,73 @@
     width: 100%;
 }
 
-.menu.medium-horizontal .button-set {
-    margin-right: 0;
+.middle-grid {
+    width: 90%;
+    display: grid;
+    grid-template-areas: 
+        "intro topo"
+        "cahier topo";
+    align-content: center;
 }
 
-.no-works{
+.introduction {
+    grid-area: intro;
+    width: 90%;
+}
+
+.flex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.no-works h2 {
-    text-align: center;
-    margin: 0;
+.topologie {
+    grid-area: topo;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.img {
+    border-radius: 20px;
+}
+
+.cahier-des-charges {
+    grid-area: cahier;
+    width: 90%;
+    height: 12rem;
+}
+
+
+.download-button {
+    height: 40px;
+    width: 20rem;
+    border: none;
+    border-radius: 10px;
+    background: #4f4bbd;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+
+.download-button a{
+    padding: 8.1px 70px 8.1px 70px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.download-button:hover {
+    position: relative;
+    background: #ffffff;
+    color: #4f4bbd;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.download-button a:hover {
+    height: 40px;
+    width: 19rem;
+    background: #ffffff;
+    color: #4f4bbd;
 }

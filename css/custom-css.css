@@ -11,8 +11,12 @@
 
 /* Top-bar avec background  */
 
-p, h1, h2, h3, a {
+p, h1, h2, h3, h4, a {
   font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  color: #ffffff;
 }
 
 .orbit-container {
