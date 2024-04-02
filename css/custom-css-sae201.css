@@ -1,6 +1,7 @@
 .orbit-container {
     position: relative;
     width: 100%;
+    height: auto;
     background: url("/bazzarom/data/img/background-sae201.png") center/cover no-repeat;
     background-size: 150vh;
     display: flex;
@@ -9,6 +10,17 @@
 
 .orbit .orbit-container .topbar-responsive .menu{
     padding: 0.7rem 1rem;
+}
+
+body {
+    height: auto;
+}
+.middle {
+    margin-top: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .middle-grid .grid-container{
@@ -24,10 +36,12 @@
 }
 
 .middle-grid {
-    width: 90%;
+    width: 87%;
     display: grid;
+    grid-template-columns: 1fr ;
     grid-template-areas: 
         "intro topo"
+        "desc topo"
         "cahier topo";
     align-content: center;
 }
@@ -53,7 +67,18 @@
 }
 
 .img {
+    min-width: 50rem;
     border-radius: 20px;
+}
+
+.middle-grid .grid-container p {
+    color: #0A0A0A;
+}
+
+.description {
+    grid-area: desc;
+    width: 90%;
+    margin: 20px 0 20px 0;
 }
 
 .cahier-des-charges {
@@ -65,7 +90,7 @@
 
 .download-button {
     height: 40px;
-    width: 20rem;
+    min-width: 20rem;
     border: none;
     border-radius: 10px;
     background: #4f4bbd;
@@ -92,4 +117,24 @@
     width: 19rem;
     background: #ffffff;
     color: #4f4bbd;
+}
+
+.end-grid {
+    margin: 0;
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+}
+
+.imgproj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.imgproj img {
+    width: 50%;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
 }
