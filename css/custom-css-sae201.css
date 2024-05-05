@@ -123,10 +123,10 @@ img {
     max-width: 100%;
 }
 .slider-container {
-    max-width: 800px;
+    width: 600px;
     position: relative;
-    margin: auto;
-    height: 350px;
+    height: 510px;
+    margin-bottom: 60px;
     overflow: hidden;
 }
 .menu_slide {
@@ -142,7 +142,7 @@ img {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #ccc;
+    background: #b5b1e9;
     border-radius: 50px;
     margin: 0 0.2em 1em;
 }
@@ -153,10 +153,12 @@ img {
     opacity: 0;
 }
 .slide-img {
+    border-radius: 20px;
     width: 100%;
-    height: 300px;
+    max-width: 600px;
+    height: auto;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 100%;
     z-index: 10;
     transition: left 0s 0.75s;
