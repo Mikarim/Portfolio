@@ -22,11 +22,9 @@ h1 {
 .orbit-container {
   height: 60rem;
   width: 100%;
-  background: url("../data/img/bg1.png") center/cover no-repeat;
-  background-color: white;
-  background-size: 100rem;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 /* top-bar */
 
@@ -160,6 +158,20 @@ h1 {
   text-decoration: none;
 }
 
+.middle-grid-container{
+  display: flex;
+}
+
+.deco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.deco img{
+  width: 100em;
+  margin-left: 40px;
+}
 
 /* ajustement pour téléphone */
 
@@ -208,6 +220,9 @@ h1 {
   background: #ffffff;
 }
 
+.middle-container {
+  margin: 15rem 5rem 5rem 5rem;
+}
 
 
 /* bottom side code */
@@ -221,12 +236,13 @@ h1 {
 }
 
 .grid-container h2 {
-  height: 1.5em;
+  height: auto;
   color: white;
   font-family: 'Manrope', sans-serif;
   font-weight: 900;
   text-align: left;
-  margin-top: 30px;
+  margin-top: 20px;
+  width: auto;
 }
 
 .grid-container p {
@@ -243,7 +259,7 @@ h1 {
 }
 
 .informations{
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .informations hr{
@@ -253,12 +269,28 @@ h1 {
 }
 
 .informations p {
+  
   color: #f8f6f5;
   font-family: 'Manrope', sans-serif;
   text-align: left;
+  margin: 5px;
 }
 
-
+@media screen and (max-width: 70.9375em) {
+  .orbit-container{
+    height: auto;
+  }
+  .presentation {
+    flex-direction: column;
+  }
+  .informations {
+    text-align: center;
+    margin: 20px;
+  }
+  .deco img {
+    display: none;
+  }
+}
 .pdp {
   align-items: center;
   height: 250px;
@@ -289,7 +321,7 @@ h1 {
 .jobs-description p{
   text-align: center;
   font-family: 'Manrope', sans-serif;
-  margin:  0 60px 0 20px;
+  margin:  0 20px 0 60px;
   width: 30rem;
 }
 
@@ -425,6 +457,9 @@ h1 {
 
 
 @media screen and (max-width: 39.9375em) {
+  .orbit-container{
+    height: auto;
+  }
   .orbit .orbit-container .topbar-responsive {
     padding: 0.75rem;
   }

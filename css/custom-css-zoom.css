@@ -37,7 +37,7 @@
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 }
 .maquetteimg{
-    margin: 0 20px 0 20px;
+    margin: 0 50px 0 50px;
     width: 100%;
     max-width: 350px;
     border: white 3px solid;
@@ -91,7 +91,7 @@
 
 .detail-projet{
     margin: 40px 0 40px 0;
-    width: auto;
+    width: 40em;
 }
 
 .groupe {
