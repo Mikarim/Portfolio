@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     background: url("/bazzarom/data/img/background-sae201.png") center/cover no-repeat;
-    background-size: 150vh;
+    background-size: 200vh;
     display: flex;
     justify-content: center;
 }
@@ -64,12 +64,13 @@ body {
     display: flex;
     align-items: flex-start;
     border-radius: 20px;
+    width: 90%;
 
 }
 
 .img {
-    min-width: 50rem;
     border-radius: 20px;
+    width: 100%;
 }
 
 .middle-grid .grid-container p {
@@ -122,29 +123,41 @@ body {
 img {
     max-width: 100%;
 }
+
+.slides:checked + .slide-img{
+    display: block;
+}
+
 .slider-container {
-    width: 600px;
+    width: 1000px;
     position: relative;
-    height: 510px;
+    height: 800px;
     margin-bottom: 60px;
     overflow: hidden;
 }
 .menu_slide {
+    display: flex;
+    justify-content: center;
+    background-color: #b5b1e9;
+    border-radius: 20px;
+    margin: 30px;
     position: absolute;
-    left: 0;
+    left: 38%;
+    right: 50%;
     z-index: 11;
-    width: 100%;
+    width: 10em;
     bottom: 0;
     text-align: center;
 }
+
 .menu_slide label {
     cursor: pointer;
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #b5b1e9;
+    background: #ffffff;
     border-radius: 50px;
-    margin: 0 0.2em 1em;
+    margin: 1em 0.2em 1em 0.2em;
 }
 .menu_slide label:hover,.menu_slide label:focus {
     background: #1c87c9;
@@ -153,12 +166,13 @@ img {
     opacity: 0;
 }
 .slide-img {
+    border: solid 10px #b5b1e9;
     border-radius: 20px;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     height: auto;
     position: absolute;
-    top: 10px;
+    top: 50px;
     left: 100%;
     z-index: 10;
     transition: left 0s 0.75s;
@@ -168,3 +182,36 @@ img {
     z-index: 100;
     transition: left 0.65s ease-out;
 }
+
+
+
+
+
+
+@media screen and (max-width: 90.9375em) {
+    .middle-grid {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+            "intro"
+            "desc"
+            "topo"
+            "cahier";
+        align-content: center;
+        justify-items: center;
+    }
+    .introduction, .description, .topologie {
+        margin: 0 0 40px 0;
+    }
+    .img {
+        width: auto;
+    }
+  }
+
+
+  @media screen and (max-width: 39.9375em) {
+    .middle-grid {
+        width: 45%;
+    }
+  }

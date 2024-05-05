@@ -15,6 +15,10 @@ p, h1, h2, h3, h4, a {
   font-family: 'Manrope', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   color: #ffffff;
 }
@@ -170,7 +174,8 @@ h1 {
 }
 .deco img{
   width: 100em;
-  margin-left: 40px;
+  max-width: 35em;
+  margin-left: 150px;
 }
 
 /* ajustement pour téléphone */
@@ -276,7 +281,14 @@ h1 {
   margin: 5px;
 }
 
-@media screen and (max-width: 70.9375em) {
+.jobs-description p{
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  margin:  0 20px 0 60px;
+  width: 30rem;
+}
+
+@media screen and (max-width: 90.9375em) {
   .orbit-container{
     height: auto;
   }
@@ -289,6 +301,9 @@ h1 {
   }
   .deco img {
     display: none;
+  }
+  .jobs-description p{
+    margin: 0px;
   }
 }
 .pdp {
@@ -318,12 +333,6 @@ h1 {
   margin: 0 auto;
 }
 
-.jobs-description p{
-  text-align: center;
-  font-family: 'Manrope', sans-serif;
-  margin:  0 20px 0 60px;
-  width: 30rem;
-}
 
 .logo-uga {
   height: 170px;
