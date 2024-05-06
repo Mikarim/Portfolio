@@ -207,11 +207,16 @@ img {
     .img {
         width: auto;
     }
+
   }
 
 
   @media screen and (max-width: 39.9375em) {
     .middle-grid {
-        width: 45%;
+        width: 50%;
     }
+    .slider-container {
+        width: 60%;
+    }
+    
   }
