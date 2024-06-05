@@ -12,7 +12,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/custom-css.css">
     <link rel="stylesheet" href="/css/custom-css-sae201.css">
-    <link rel="stylesheet" href="/css/custom-css-sae203.css">
     <link rel="stylesheet" href="/css/resizer.css">
   </head>
 
@@ -35,9 +34,9 @@
                 <li class="deroulant">
                   <a class="iconfleche" href="#"><i class="fa-solid fa-network-wired">&nbsp</i>Travaux</a>
                   <ul class="sous">
-                    <li><a href="/saes/sae20X/sae201.html">SAÉ201</a></li>
+                    <li><a href="#">SAÉ201</a></li>
                     <li><a href="/saes/sae20X/sae202.html">SAÉ202</a></li>
-                    <li><a href="#">SAÉ203</a></li>
+                    <li><a href="/saes/sae20X/sae203.html">SAÉ203</a></li>
                   </ul>
                 </li>
               </ul>
@@ -62,46 +61,29 @@
               <div class="introduction">
                 <article class="grid-container">
                   <div class="flex">
-                    <h1><i class="fa-brands fa-python">&nbsp</i><strong>SAE203</strong></h1>
-                    <p>Gestion du personnel de l’Université</p>
+                    <h1><i class="fa-solid fa-diagram-project">&nbsp</i><strong>SAE201</strong></h1>
+                    <p>construire un réseau informatique pour une petite structure</p>
                   </div>
                 </article>
               </div>
               <div class="description">
                 <article class="grid-container">
-                  <p>L’objectif de ce projet est de mettre en place un <strong>outil informatique (base de données et application Web) permettant la gestion des personnels de l’Université.</strong> L’outil doit permettre : </p>
-                  <br>
-                  <ul>
-                    <li>de saisir les informations d’un nouveau personnel (nom, prenom, statut)</li>
-                    <li>de valider le changement de statut d’un enseignant chercheur</li>
-                    <li>de changer un personnel d’affectation</li>
-                    <li>de changer le temps de travail d’une personne en créant une nouvelle affectation au même poste</li>
-                  </ul>
-                  <br>
-                  <p>L’outil doit être accessible aux personnels, disposant d’un compte avec mot de passe, avec des droits différents selon leur rôle au sein de l’Université :</p>
-                  <br>
-                  <ul>
-                    <li>les personnels peuvent visualiser et modifier leurs données personnelles (adresse, numéro de téléphone, courriel perso – le courriel de l’université n’est pas modifiable)</li>
-                    <li>les personnels du service RH peuvent visualiser et modifier l’ensemble des éléments (données des personnels et affectation courante), à l’exception des affectations passées</li>
-                    <li>l’annuaire des personnels est accessible à toute personne disposant d’un compte, celui-ci donne uniquement les informations professionnelles (service, courriel UGA, téléphone UGA)</li>
-                    <li>les informations des structures sont public et accessibles à tout le monde (sans compte).</li>
-                  </ul>
-                  <p>L’outil ne gère ni les salaires ni les fiches de paie.</p>
+                  <p>L'objectif de ce projet était de créer un réseau informatique utilisant OpenStack, comprenant deux serveurs Linux et deux machines Windows. Chaque machine était capable de communiquer avec chacune d'entre elles et possédait ses propres fonctionnalités.
+                    <br><br><strong>serva</strong> : Linux FTP, DNS, Prometheus
+                    <br><strong>servb</strong> : Linux Apache, Nextcloud
+                    <br><strong>w10a</strong> : Windows 10 
+                    <br><strong>w10b</strong> : Windows 10
+                  </p>
                 </article>
               </div>
               <div class="topologie">
                 <article class="grid-container">
-                  <img id="myImg1" class="img" src="/data/img/dbase.png" alt="Picture">
+                  <img id="myImg1" class="img" src="/data/img/plan du reseau.png" alt="Picture">
                 </article>
               </div>
               <div class="cahier-des-charges">
                 <article class="grid-container">
-                  <p>
-                    Voici la structure de la base de données employée dans le cadre du projet.
-                    Il s'agissait de collecter et de classer les informations les plus essentielles à présenter.
-                    J'ai employé des opérateurs de jointures SQL afin de générer des vues.
-                    Cela facilite l'accès aux informations pertinentes.
-                  </p>
+                  <button type="button" class="download-button"><a href="/cv/SAE201_Cahier_des_Charges_2324.pdf" download="SAE201-cahier_des_charges.pdf"><i class="fa-solid fa-download">&nbsp</i>Cahier des charges</a></button>
                 </article>
               </div>
             </div>
@@ -113,12 +95,12 @@
                       <button class="orbit-previous"><span class="show-for-sr">Image précédente</span>&#9664;&#xFE0E;</button>
                       <button class="orbit-next"><span class="show-for-sr">Image suivante</span>&#9654;&#xFE0E;</button>
                       <li class="is-active orbit-slide">
-                        <img id="myImg2" class="orbit-image" src="/data/img/bienvenue.png" alt="Space">
-                        <figcaption class="orbit-caption">Première page en arrivant sur le site</figcaption>
+                        <img id="myImg2" class="orbit-image" src="/data/img/schema-proj-g3b2.drawio (1).png" alt="Space">
+                        <figcaption class="orbit-caption">Schéma du réseau</figcaption>
                       </li>
                       <li class="orbit-slide">
-                        <img id="myImg3" class="orbit-image" src="/data/img/code_app.png" alt="Space">
-                        <figcaption class="orbit-caption">Site 100% modulé par flask (module python)</figcaption>
+                        <img id="myImg3" class="orbit-image" src="/data/img/siteperso.png" alt="Space">
+                        <figcaption class="orbit-caption">Mise en service de mon portefolio</figcaption>
                       </li>
                       <li class="orbit-slide">
                         <img id="myImg4" class="orbit-image" src="/data/img/nextcloud.png" alt="Space">

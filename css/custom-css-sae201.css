@@ -44,6 +44,7 @@ body {
         "desc topo"
         "cahier topo";
     align-content: center;
+    justify-items: center;
 }
 
 .introduction {
@@ -120,75 +121,55 @@ body {
     background: #ffffff;
     color: #4f4bbd;
 }
-img {
-    max-width: 100%;
+
+.news-image-gallery-container {
+  border-radius: 20px;
+  height: 800px;
+  background: #4f46cc6a;
+  padding: 2rem 1.5rem 1rem;
+  margin-bottom: 50px;
 }
 
-.slides:checked + .slide-img{
-    display: block;
-}
-
-.slider-container {
-    width: 1000px;
-    position: relative;
-    height: 800px;
-    margin-bottom: 60px;
-    overflow: hidden;
-}
-.menu_slide {
-    display: flex;
-    justify-content: center;
-    background-color: #b5b1e9;
+.orbit-image {
     border-radius: 20px;
-    margin: 30px;
-    position: absolute;
-    left: 38%;
-    right: 50%;
-    z-index: 11;
-    width: 10em;
-    bottom: 0;
-    text-align: center;
-}
-
-.menu_slide label {
-    cursor: pointer;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #ffffff;
-    border-radius: 50px;
-    margin: 1em 0.2em 1em 0.2em;
-}
-.menu_slide label:hover,.menu_slide label:focus {
-    background: #1c87c9;
-}
-.slide-input{
-    opacity: 0;
-}
-.slide-img {
-    border: solid 10px #b5b1e9;
-    border-radius: 20px;
+    object-fit: cover;
+    height: calc(760px - 7rem);
     width: 100%;
-    max-width: 1000px;
+}
+
+img {
+    width: 100%;
     height: auto;
-    position: absolute;
-    top: 50px;
-    left: 100%;
-    z-index: 10;
-    transition: left 0s 0.75s;
-}
-[id^="slide"]:checked + .slide-img {
-    left: 0;
-    z-index: 100;
-    transition: left 0.65s ease-out;
 }
 
+.orbit-slide, .row.orbit {
+    width: 100%;
+    height: calc(800px - 7rem);
+}
+
+.orbit-caption {
+    border-radius: 20px;
+    background-color: #4f4bbdca;
+    font-family: 'Manrope', sans-serif;
+}
+
+.orbit-bullets button{
+    background-color: #ffffff;
+}
+
+.orbit-bullets button.is-active {
+    background-color: #4f4bbd;
+}
 
 
 
 
 
-@media screen and (max-width: 90.9375em) {
+
+
+
+
+@media screen and (max-width: 85.9375em) {
     .middle-grid {
         width: 70%;
         display: grid;
@@ -199,24 +180,37 @@ img {
             "topo"
             "cahier";
         align-content: center;
-        justify-items: center;
     }
-    .introduction, .description, .topologie {
+    .introduction, .description, .topologie, .cahier-des-charges{
         margin: 0 0 40px 0;
+        width: 100%;
     }
-    .img {
-        width: auto;
+    .news-image-gallery-container {
+        height: 400px;
+        width: 90%;
     }
-
+    .orbit-slide, .row.orbit {
+        width: 100%;
+        height: calc(400px - 7rem);
+    }
+    
+    .orbit-image{
+        height: calc(400px - 7rem);
+        width: 100%;
+    }
   }
 
 
   @media screen and (max-width: 39.9375em) {
     .middle-grid {
-        width: 50%;
+        width: 30%;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
     }
-    .slider-container {
-        width: 60%;
+    .middle {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
-    
   }

@@ -1,0 +1,34 @@
+.description .grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.description, .introduction {
+    width: calc(400px);
+}
+
+.middle-grid {
+    width: 87%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+        "intro topo"
+        "desc topo"
+        "desc cahier";
+    align-content: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 85.9375em) {
+    .middle-grid {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+            "intro"
+            "desc"
+            "topo"
+            "cahier";
+        align-content: center;
+    }
+}

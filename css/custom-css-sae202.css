@@ -1,0 +1,57 @@
+.middle-grid {
+    width: 87%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+        "intro intro"
+        "desc topo"
+        "cahier topo";
+    align-content: center;
+}
+
+
+.introduction .grid-container {
+    width: 100%;
+    max-width: none;
+}
+
+.topologie {
+    margin-top: 20px;
+    width: calc(100% - 15%);
+}
+
+.topologie .grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.description, .cahier-des-charges {
+    margin-left: 105px;
+}
+
+@media screen and (max-width: 85.9375em) {
+    .middle-grid {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+            "intro"
+            "desc"
+            "topo"
+            "cahier";
+        align-content: center;
+        justify-items: center;
+    }
+    .description, .cahier-des-charges {
+        margin-left: 0;
+    }
+
+    .topologie {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.news-image-gallery-container{
+    margin-top: 100px;
+}
