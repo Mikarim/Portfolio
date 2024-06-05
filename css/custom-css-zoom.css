@@ -1,0 +1,117 @@
+.orbit-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url("../data/img/bgzoom.png") center/cover no-repeat;
+    background-size: 140vh;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-grid .grid-container {
+    background-color: #b5b3e8dd;
+    backdrop-filter: blur(0.50rem);
+    border-radius: 20px;
+    margin-top: 15rem;
+    padding: 30px;
+    width: 100%;
+}
+
+.menu.medium-horizontal .button-set-zoom{
+    margin: 0 25px 0 15px;
+  }
+
+.projetbac {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgproj{
+    margin: 0 20px 0 20px;
+    width: 100%;
+    max-width: 450px;
+    border: white 3px solid;
+    border-radius: 50px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+.maquetteimg{
+    margin: 0 50px 0 50px;
+    width: 100%;
+    max-width: 350px;
+    border: white 3px solid;
+    border-radius: 50px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.intro-projet h2 {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.middle-grid .rea-container {
+    background-color: #b5b3e8dd;
+    backdrop-filter: blur(0.50rem);
+    border-radius: 20px;
+    margin-bottom: 70px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 75rem;
+}
+
+.realisation {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.rea-container h2 {
+    height: 1.5em;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+.rea-container p, .middle-grid .grid-container p{
+    color: #0a0a0a;
+    width: auto;
+    text-align: center;
+    margin:0;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* .detail-projet ul li p {
+    text-align: left;
+} */
+
+.detail-projet{
+    margin: 40px 0 40px 0;
+    width: 40em;
+}
+
+.groupe {
+    padding: 25px;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+    .middle-grid{
+        min-width: 414px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle-grid .grid-container, .middle-grid .rea-container{
+        width: 94%
+    }
+    .projetbac, .realisation{
+        flex-direction: column;
+        padding: 0;
+    }
+}

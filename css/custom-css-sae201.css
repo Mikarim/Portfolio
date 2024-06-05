@@ -1,0 +1,216 @@
+.orbit-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url("/bazzarom/data/img/background-sae201.png") center/cover no-repeat;
+    background-size: 200vh;
+    display: flex;
+    justify-content: center;
+}
+
+.orbit .orbit-container .topbar-responsive .menu{
+    padding: 0.7rem 1rem;
+}
+
+body {
+    height: auto;
+}
+.middle {
+    margin-top: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-grid .grid-container{
+    background-color: #b5b3e8dd;
+    backdrop-filter: blur(0.50rem);
+    border-radius: 20px;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.middle-grid {
+    width: 87%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+        "intro topo"
+        "desc topo"
+        "cahier topo";
+    align-content: center;
+    justify-items: center;
+}
+
+.introduction {
+    grid-area: intro;
+    width: 90%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topologie {
+    grid-area: topo;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 20px;
+    width: 90%;
+
+}
+
+.img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.middle-grid .grid-container p {
+    color: #0A0A0A;
+}
+
+.description {
+    grid-area: desc;
+    width: 90%;
+    margin: 20px 0 20px 0;
+}
+
+.cahier-des-charges {
+    grid-area: cahier;
+    width: 90%;
+    height: 12rem;
+}
+
+
+.download-button {
+    height: 40px;
+    min-width: 20rem;
+    border: none;
+    border-radius: 10px;
+    background: #4f4bbd;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+
+.download-button a{
+    padding: 8.1px 70px 8.1px 70px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.download-button:hover {
+    position: relative;
+    background: #ffffff;
+    color: #4f4bbd;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.download-button a:hover {
+    height: 40px;
+    width: 19rem;
+    background: #ffffff;
+    color: #4f4bbd;
+}
+
+.news-image-gallery-container {
+  border-radius: 20px;
+  height: 800px;
+  background: #4f46cc6a;
+  padding: 2rem 1.5rem 1rem;
+  margin-bottom: 50px;
+}
+
+.orbit-image {
+    border-radius: 20px;
+    object-fit: cover;
+    height: calc(760px - 7rem);
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.orbit-slide, .row.orbit {
+    width: 100%;
+    height: calc(800px - 7rem);
+}
+
+.orbit-caption {
+    border-radius: 20px;
+    background-color: #4f4bbdca;
+    font-family: 'Manrope', sans-serif;
+}
+
+.orbit-bullets button{
+    background-color: #ffffff;
+}
+
+.orbit-bullets button.is-active {
+    background-color: #4f4bbd;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 85.9375em) {
+    .middle-grid {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+            "intro"
+            "desc"
+            "topo"
+            "cahier";
+        align-content: center;
+    }
+    .introduction, .description, .topologie, .cahier-des-charges{
+        margin: 0 0 40px 0;
+        width: 100%;
+    }
+    .news-image-gallery-container {
+        height: 400px;
+        width: 90%;
+    }
+    .orbit-slide, .row.orbit {
+        width: 100%;
+        height: calc(400px - 7rem);
+    }
+    
+    .orbit-image{
+        height: calc(400px - 7rem);
+        width: 100%;
+    }
+  }
+
+
+  @media screen and (max-width: 39.9375em) {
+    .middle-grid {
+        width: 30%;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .middle {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+  }

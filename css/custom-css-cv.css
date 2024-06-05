@@ -1,0 +1,167 @@
+.orbit-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: url("../data/img/bgcv.png") center/cover no-repeat;
+    background-size: 150vh;
+    display: flex;
+    justify-content: center;
+  }
+
+.orbit .orbit-container .topbar-responsive .menu {
+    background: transparent;
+}
+
+.middle-grid .grid-container{
+    background-color: #b5b3e8dd;
+    backdrop-filter: blur(0.50rem);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.download .grid-container{
+    margin-top: 15rem;
+}
+
+.description-container{
+    background-color: #b5b3e8dd;
+    backdrop-filter: blur(0.50rem);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.intro, .exp-container {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+}
+
+.intro-desc {
+    margin: 30px;
+    top: 100%;
+}
+
+.intro-desc h2, .exp-container h2, .skills-container h2 {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    margin: 0;
+}
+.intro-desc h5, .intro-desc p {
+    color: #0a0a0a;
+    text-align: left;
+}
+
+
+.formations {
+    width: 35rem;
+    margin: 20px;
+    text-align: left;
+}
+
+.exp-pro {
+    margin: 20px;
+    width: 35rem;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: 28rem 28rem;
+}
+
+.centre-interet, .competences, .pp, .soft-skills{
+    margin: 20px;
+    padding: auto;
+}
+
+.exp-container p, .skills-container p{
+    margin: 0;
+}
+
+.download-button {
+    height: 40px;
+    width: 20rem;
+    border: none;
+    border-radius: 10px;
+    background: #4f4bbd;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+
+.download-button a{
+    padding: 8.1px 70px 8.1px 70px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.download-button:hover {
+    position: relative;
+    background: #ffffff;
+    color: #4f4bbd;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.download-button a:hover {
+    height: 40px;
+    width: 19rem;
+    background: #ffffff;
+    color: #4f4bbd;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .download{
+        width: 94%;
+    }
+    /* .middle-grid .grid-container{
+        width: 94%;
+    } */
+    .middle-grid{
+        min-width: 414px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .description-container{
+        display: flex;
+        width: auto;
+    }
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .formations, .exp-pro, .competences, .pp, .centre-interet {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+
+    .cv {
+        height: auto;
+        border-radius: 25px;
+        box-shadow: -3px 4px 17px 0;
+    }
+
+    .download-button{
+        margin: 0.875rem 0;
+    }
+    
+    .exp-container, .intro {
+        width: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  }

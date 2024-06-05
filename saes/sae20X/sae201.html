@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAÉ201 - Bazzaro Mikael</title>
+    <link rel="shortcut icon" href="./data/img/house-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/custom-css.css">
+    <link rel="stylesheet" href="/css/custom-css-sae201.css">
+    <link rel="stylesheet" href="/css/resizer.css">
+  </head>
+
+  <header>
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures">
+      <div class="orbit-container">
+        <nav class="top-bar topbar-responsive">
+          <div class="top-bar-title">
+            <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+              <button class="menu-icon" type="button" data-toggle></button>
+            </span>
+          </div>
+          <div id="topbar-responsive" class="topbar-responsive-links">
+            <div class="top-bar-left">
+              <ul class="menu simple vertical medium-horizontal">
+                <li><a class="text-topbar" href="/cv.html"><i class="fa-regular fa-file-lines">&nbsp</i>CV</a></li>
+                <li><a class="text-topbar" href="/contact.html"><i class="fa-regular fa-comments">&nbsp</i>Contact</a></li>
+                <li><a class="text-topbar" href="/index.html"><i class="fa-solid fa-house">&nbsp</i>Accueil</a></li>
+                <li><a class="text-topbar" href="/a-propos.html"><i class="fa-solid fa-magnifying-glass">&nbsp</i>Zoom</a></li>
+                <li class="deroulant">
+                  <a class="iconfleche" href="#"><i class="fa-solid fa-network-wired">&nbsp</i>Travaux</a>
+                  <ul class="sous">
+                    <li><a href="#">SAÉ201</a></li>
+                    <li><a href="/saes/sae20X/sae202.html">SAÉ202</a></li>
+                    <li><a href="/saes/sae20X/sae203.html">SAÉ203</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <body>
+          <div id="myModal1" class="modal">
+            <img class="modal-content" id="img01">
+          </div>
+          <div id="myModal2" class="modal">
+            <img class="modal-content" id="img02">
+          </div>
+          <div id="myModal3" class="modal">
+            <img class="modal-content" id="img03">
+          </div>
+          <div id="myModal4" class="modal">
+            <img class="modal-content" id="img04">
+          </div>
+          <div class="middle">
+            <div class="middle-grid">
+              <div class="introduction">
+                <article class="grid-container">
+                  <div class="flex">
+                    <h1><i class="fa-solid fa-diagram-project">&nbsp</i><strong>SAE201</strong></h1>
+                    <p>construire un réseau informatique pour une petite structure</p>
+                  </div>
+                </article>
+              </div>
+              <div class="description">
+                <article class="grid-container">
+                  <p>L'objectif de ce projet était de créer un réseau informatique utilisant OpenStack, comprenant deux serveurs Linux et deux machines Windows. Chaque machine était capable de communiquer avec chacune d'entre elles et possédait ses propres fonctionnalités.
+                    <br><br><strong>serva</strong> : Linux FTP, DNS, Prometheus
+                    <br><strong>servb</strong> : Linux Apache, Nextcloud
+                    <br><strong>w10a</strong> : Windows 10 
+                    <br><strong>w10b</strong> : Windows 10
+                  </p>
+                </article>
+              </div>
+              <div class="topologie">
+                <article class="grid-container">
+                  <img id="myImg1" class="img" src="/data/img/plan du reseau.png" alt="Picture">
+                </article>
+              </div>
+              <div class="cahier-des-charges">
+                <article class="grid-container">
+                  <button type="button" class="download-button"><a href="/cv/SAE201_Cahier_des_Charges_2324.pdf" download="SAE201-cahier_des_charges.pdf"><i class="fa-solid fa-download">&nbsp</i>Cahier des charges</a></button>
+                </article>
+              </div>
+            </div>
+            <div class="news-image-gallery-container">
+              <div class="row">
+                <div class="small-12 medium-12 large-8 columns">
+                  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+                    <ul class="orbit-container">
+                      <button class="orbit-previous"><span class="show-for-sr">Image précédente</span>&#9664;&#xFE0E;</button>
+                      <button class="orbit-next"><span class="show-for-sr">Image suivante</span>&#9654;&#xFE0E;</button>
+                      <li class="is-active orbit-slide">
+                        <img id="myImg2" class="orbit-image" src="/data/img/schema-proj-g3b2.drawio (1).png" alt="Space">
+                        <figcaption class="orbit-caption">Schéma du réseau</figcaption>
+                      </li>
+                      <li class="orbit-slide">
+                        <img id="myImg3" class="orbit-image" src="/data/img/siteperso.png" alt="Space">
+                        <figcaption class="orbit-caption">Mise en service de mon portefolio</figcaption>
+                      </li>
+                      <li class="orbit-slide">
+                        <img id="myImg4" class="orbit-image" src="/data/img/nextcloud.png" alt="Space">
+                        <figcaption class="orbit-caption">Mise en service de Nextcloud</figcaption>
+                      </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                      <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                      <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                      <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
+      </div>
+    </div>
+  </header>  
+
+  
+  <article class="grid-container">
+    <footer class="callout large secondary">
+      <article class="grid-container">
+      <div class="grid-x">
+        <div class="contact">
+          <p><i class="fa-solid fa-arrow-up-right-from-square">&nbsp&nbsp</i><a href="./contact.html">contact par mail</a></p>
+        </div>
+        <div class="reseaux">
+          <ul class="menu vertical">
+            <li><a href="https://github.com/Mikarim"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mikael-bazzaro-b242092b5/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/mikael_bzr/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li><a href="#"><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <p class="copyright"><i class="fa-regular fa-copyright">&nbsp&nbsp</i>Copyright 2024 Mikael Bazzaro - Tous droits réservés</p>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+  <script src="https://kit.fontawesome.com/9f184c18ec.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script src="./data/js/topbar.js"></script>
+  <script src="/data/js/resizer.js"></script>
+</html>
