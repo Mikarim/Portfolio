@@ -1,4 +1,4 @@
-#myImg1, #myImg2, #myImg3, #myImg4{
+#myImg1, #myImg2{
     cursor: pointer;
     transition: 0.3s;
     display: block;
@@ -36,7 +36,7 @@
 }
 
 /* Caption of Modal Image */
-#caption1, #caption2, #caption3, #caption4 {
+#caption1, #caption2 {
     margin: auto;
     display: block;
     width: 80%;
@@ -48,7 +48,7 @@
 }
 
 /* Add Animation */
-.modal-content, #caption1, #caption2, #caption3, #caption4 {
+.modal-content, #caption1, #caption2{
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
