@@ -1,3 +1,13 @@
+.orbit-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: url("../data/img/background\ sae202.jpg") center/cover no-repeat;
+    background-size: 150vh;
+    display: flex;
+    justify-content: center;
+  }
+
 .middle-grid {
     width: 87%;
     display: grid;
