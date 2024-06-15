@@ -41,4 +41,7 @@
             "cahier";
         align-content: center;
     }
+    .news-image-gallery-container {
+        margin-top: 50px;
+    }
 }

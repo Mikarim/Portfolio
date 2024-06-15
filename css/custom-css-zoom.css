@@ -45,6 +45,10 @@
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 }
 
+.intro-projet {
+    margin: 40px;
+}
+
 .intro-projet h2 {
     text-align: center;
     margin: 20px 0 40px 0;
@@ -90,8 +94,8 @@
 } */
 
 .detail-projet{
-    margin: 40px 0 40px 0;
-    width: 40em;
+    margin: 40px;
+    width: auto;
 }
 
 .groupe {
