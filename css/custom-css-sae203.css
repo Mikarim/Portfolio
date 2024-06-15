@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 85.9375em) {
     .middle-grid {
-        width: 70%;
+        width: 95%;
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-areas: 
@@ -43,5 +43,8 @@
     }
     .news-image-gallery-container {
         margin-top: 50px;
+    }
+    .description, .introduction {
+        width: 100%;
     }
 }
