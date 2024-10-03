@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SAÉ203 - Bazzaro Mikael</title>
+    <title>SAÉ204 - Bazzaro Mikael</title>
     <link rel="shortcut icon" href="/data/img/codepen.svg" type="image/x-icon">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
-    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/custom-css.css">
     <link rel="stylesheet" href="/css/custom-css-sae201.css">
-    <link rel="stylesheet" href="/css/custom-css-sae203.css">
+    <link rel="stylesheet" href="/css/custom-css-sae204.css">
     <link rel="stylesheet" href="/css/resizer.css">
   </head>
 
@@ -38,8 +36,8 @@
                   <ul class="sous">
                     <li><a href="/saes/sae20X/sae201.html">SAÉ201</a></li>
                     <li><a href="/saes/sae20X/sae202.html">SAÉ202</a></li>
-                    <li><a href="#">SAÉ203</a></li>
-                    <li><a href="/saes/sae20X/sae204.html">SAÉ204</a></li>
+                    <li><a href="/saes/sae20X/sae203.html">SAÉ203</a></li>
+                    <li><a href="#">SAÉ204</a></li>
                   </ul>
                 </li>
               </ul>
@@ -64,39 +62,24 @@
               <div class="introduction">
                 <article class="grid-container">
                   <div class="flex">
-                    <h1><i class="fa-brands fa-python">&nbsp</i><strong>SAE203</strong></h1>
-                    <p>Gestion du personnel de l’Université</p>
+                    <h1><i class="fa-solid fa-server">&nbsp</i><strong>SAE204</strong></h1>
+                    <p>Projet intégratif</p>
                   </div>
                 </article>
               </div>
               <div class="description">
                 <article class="grid-container">
-                  <p>L’objectif de ce projet est de mettre en place un <strong>outil informatique (base de données et application Web) permettant la gestion des personnels de l’Université.</strong> L’outil doit permettre : </p>
-                  <br>
-                  <ul>
-                    <li>de saisir les informations d’un nouveau personnel (nom, prenom, statut)</li>
-                    <li>de valider le changement de statut d’un enseignant chercheur</li>
-                    <li>de changer un personnel d’affectation</li>
-                    <li>de changer le temps de travail d’une personne en créant une nouvelle affectation au même poste</li>
-                  </ul>
-                  <br>
-                  <p>L’outil doit être accessible aux personnels, disposant d’un compte avec mot de passe, avec des droits différents selon leur rôle au sein de l’Université :</p>
-                  <br>
-                  <ul>
-                    <li>les personnels peuvent visualiser et modifier leurs données personnelles (adresse, numéro de téléphone, courriel perso – le courriel de l’université n’est pas modifiable)</li>
-                    <li>les personnels du service RH peuvent visualiser et modifier l’ensemble des éléments (données des personnels et affectation courante), à l’exception des affectations passées</li>
-                    <li>l’annuaire des personnels est accessible à toute personne disposant d’un compte, celui-ci donne uniquement les informations professionnelles (service, courriel UGA, téléphone UGA)</li>
-                    <li>les informations des structures sont public et accessibles à tout le monde (sans compte).</li>
-                  </ul>
-                  <p>L’outil ne gère ni les salaires ni les fiches de paie.</p>
+                  <p>
+                    Grâce à ce projet, j'ai pu visualiser les informations provenant d'un capteur de température.  Ainsi, j'ai configuré un capteur de mesure de température, en particulier grâce à sa résistance variable en fonction de la température. J'ai également dû créer un code en Python pour récupérer les mesures du capteur afin de les stocker dans une base de données et d'installer des services dans une infrastructure hébergée sur OpenStack.
+                  </p>
                 </article>
               </div>
               <div class="topologie">
                 <article class="grid-container">
-                  <img id="myImg1" class="img" src="/data/img/dbase.png" alt="Picture">
+                  <img id="myImg1" class="img" src="/data/img/grafana.png" alt="Picture">
                 </article>
               </div>
-              <div class="cahier-des-charges">
+              <!-- <div class="cahier-des-charges">
                 <article class="grid-container">
                   <p>
                     Voici la structure de la base de données employée dans le cadre du projet.
@@ -105,7 +88,7 @@
                     Cela facilite l'accès aux informations pertinentes.
                   </p>
                 </article>
-              </div>
+              </div> -->
             </div>
             <div class="news-image-gallery-container">
               <div class="row">
@@ -115,16 +98,16 @@
                       <button class="orbit-previous"><span class="show-for-sr">Image précédente</span>&#9664;&#xFE0E;</button>
                       <button class="orbit-next"><span class="show-for-sr">Image suivante</span>&#9654;&#xFE0E;</button>
                       <li class="is-active orbit-slide">
-                        <img id="myImg2" class="orbit-image" src="/data/img/bienvenue.png" alt="Space">
-                        <figcaption class="orbit-caption">Première page en arrivant sur le site</figcaption>
+                        <img id="myImg2" class="orbit-image" src="/data/img/code-sae204.png" alt="Space">
+                        <figcaption class="orbit-caption">Voici un morceau de l'arborécence du programme python avec quelques fonctions</figcaption>
                       </li>
                       <li class="orbit-slide">
-                        <img id="myImg3" class="orbit-image" src="/data/img/code_app.png" alt="Space">
-                        <figcaption class="orbit-caption">Site 100% modulé par flask (module python)</figcaption>
+                        <img id="myImg3" class="orbit-image" src="/data/img/calibration-capteur-temp.jpg" alt="Space">
+                        <figcaption class="orbit-caption">Calibration du capteur de température sur plaques de tests</figcaption>
                       </li>
                       <li class="orbit-slide">
-                        <img id="myImg4" class="orbit-image" src="/data/img/page de affectation.png" alt="Space">
-                        <figcaption class="orbit-caption">Mise relation des différentes affectations du personnel</figcaption>
+                        <img id="myImg4" class="orbit-image" src="/data/img/base de donnée serveur sae204.png" alt="Space">
+                        <figcaption class="orbit-caption">Base de donnée sur PHPmyadmin avec la table "test" qui simule des données température </figcaption>
                       </li>
                     </ul>
                     <nav class="orbit-bullets">

@@ -11,7 +11,9 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/custom-css.css">
+    <link rel="stylesheet" href="/css/resizer-zoom.css">
     <link rel="stylesheet" href="/css/custom-css-zoom.css">
+    
   </head>
 
   <header>
@@ -34,7 +36,10 @@
                 </li>
                 <li class="deroulant"><a class="iconfleche" href="#"><i class="fa-solid fa-network-wired">&nbsp</i>Travaux</a>
                   <ul class="sous">
-                    <li><a href="/saes/sae20X/sae203.html">SAÉ201</a></li>
+                    <li><a href="/saes/sae20X/sae201.html">SAÉ201</a></li>
+                    <li><a href="/saes/sae20X/sae202.html">SAÉ202</a></li>
+                    <li><a href="/saes/sae20X/sae203.html">SAÉ203</a></li>
+                    <li><a href="/saes/sae20X/sae204.html">SAÉ204</a></li>
                   </ul>
                 </li>
               </ul>
@@ -42,10 +47,16 @@
           </div>
         </nav>
         <body>
+          <div id="myModal1" class="modal">
+            <img class="modal-content" id="img01">
+          </div>
+          <div id="myModal2" class="modal">
+            <img class="modal-content" id="img02">
+          </div>
           <div class="middle-grid">
             <article class="grid-container">
               <section class="projetbac">
-                <img class="imgproj" src="./data/img/olympiades-sciences_ingé.png" alt="">
+                <img id="myImg1" class="imgproj" src="./data/img/olympiades-sciences_ingé.png" alt="Picture">
                 <div class="intro-projet">
                   <h2>Olympiades de Sciences de l'Ingénieur</h2>
                   <br>
@@ -62,12 +73,17 @@
                 <div class="detail-projet">
                   <h2>La réalisation</h2>
                   <br>
-                  <p>Comme support de projet, nous avons décidé de faire une maquette à l'échelle 1/10ème.
-                    Dans un premier temps, j'ai réalisé un Diagramme de GANT pour permettre à mon équipe de se répartir les taches correctement,
-                    mon but dans ce projet était une partie théorique, où j'ai réalisé un excel de tous les gains avec notre auto-production solaire et les pertes
-                    avec la consommation électrique. Toute cette démarche m'a permit de choisir l'éclairage adapté et d'optimiser au mieux notre projet.
-                    Par la suite, nous avons réalisé un réseau électrique avec des panneaux solaires alimentant des LED pour simuler l'éclairage.
-                    Enfin, tout ce système était raccordé à une carte électronique permettant d'allumer les LEDs quand une personne était détectée ce qui était ma dernière partie.
+                  <p>Comme support de projet, nous avons décidé de faire une maquette 
+                    à l'échelle 1/10 e. Dans un premier temps, j'ai réalisé un diagramme de 
+                    GANT pour permettre à mon équipe de se répartir les tâches correctement. 
+                    Mon but dans ce projet était une partie théorique, où j'ai réalisé un excel 
+                    de tous les gains avec notre autoproduction solaire et les pertes avec la 
+                    consommation électrique. Toute cette démarche m'a permis de choisir 
+                    l'éclairage adapté et d'optimiser au mieux notre projet. Par la suite, 
+                    nous avons réalisé un réseau électrique avec des panneaux solaires 
+                    alimentant des LEDS pour simuler l'éclairage. Enfin, tout ce système était 
+                    raccordé à une carte électronique permettant d'allumer les LEDS quand une 
+                    personne était détectée, ce qui était ma dernière partie.
                   </p>
                   <br>
                   <h2>Compétences</h2>
@@ -76,7 +92,7 @@
                   <li><p><i class="fa-solid fa-lightbulb">&nbsp&nbsp</i>Réalisation d'un système domotique (cablage, soudures)</p></li>
                   <li><p><i class="fa-solid fa-microchip">&nbsp&nbsp</i>Programmation du système domotique (langage C)</p></li>
                 </div>
-                <img class="maquetteimg" src="./data/img/realisation_maquette.png" alt="">
+                <img id="myImg2" class="maquetteimg" src="./data/img/realisation_maquette.png" alt="maquette du projet">
               </div>
             </article>
             <article class="rea-container">
@@ -122,5 +138,6 @@
     $(document).foundation();
   </script>
   <script src="./data/js/topbar.js"></script>
+  <script src="/data/js/resizer-zoom.js"></script>
   
 </html>
