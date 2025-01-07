@@ -64,9 +64,12 @@
 
 
 .formations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 35rem;
     margin: 20px;
-    text-align: left;
 }
 
 .exp-pro {

@@ -240,6 +240,11 @@ h1 {
   margin-bottom: 50px;
 }
 
+.sh-me {
+  max-width: 50em;
+  margin-right: 10em;
+}
+
 .grid-container h2 {
   height: auto;
   color: white;
@@ -291,6 +296,10 @@ h1 {
 @media screen and (max-width: 85.9375em) {
   .orbit-container{
     height: auto;
+  }
+
+  .sh-me {
+    margin: 0;
   }
   .presentation {
     flex-direction: column;
