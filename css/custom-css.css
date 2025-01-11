@@ -238,6 +238,12 @@ h1 {
   background: #4f46cc6a;
   border-radius: 25px;
   margin-bottom: 50px;
+  animation: fadeIn 0.5s ease-in-out, slideDown 0.5s ease-in-out;
+
+}
+
+.anim-on-start {
+  animation: fadeIn 0.5s ease-in-out, slideDown 0.5s ease-in-out;
 }
 
 .sh-me {
@@ -589,7 +595,7 @@ h1 {
 @keyframes slideDown {
   0% {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+            transform: translateY(10%);
   }
   100% {
     -webkit-transform: translateY(0%);
