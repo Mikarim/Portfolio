@@ -12,30 +12,21 @@
     background: transparent;
 }
 
+.introduction-container, .formations-container {
+    margin-bottom: 40px;
+}
+
 .middle-grid .grid-container{
     background-color: #b5b3e8dd;
     backdrop-filter: blur(0.50rem);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.middle-grid .grid-container p {
+    text-align: left;
 }
 
 .download .grid-container{
     margin-top: 15rem;
-}
-
-.description-container{
-    background-color: #b5b3e8dd;
-    backdrop-filter: blur(0.50rem);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 40px;
 }
 
 
@@ -60,6 +51,16 @@
 .intro-desc h5, .intro-desc p {
     color: #0a0a0a;
     text-align: left;
+}
+
+.pdp {
+  align-items: center;
+  height: 250px;
+  width: auto;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  border: white 3px solid;
+  border-radius: 50px;
 }
 
 
@@ -89,6 +90,12 @@
 
 .exp-container p, .skills-container p{
     margin: 0;
+}
+
+.cv-dl-container {
+    margin-top: 25px;
+    display: flex;
+    text-align: center;
 }
 
 .download-button {
@@ -122,13 +129,10 @@
     color: #4f4bbd;
 }
 
-@media screen and (max-width: 39.9375em) {
-    .download{
-        width: 95%;
-    }
+@media screen and (max-width: 85.9375em) {
     .middle-grid{
+        width: 95%;
         min-width: 414px;
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -165,5 +169,29 @@
         width: auto;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    .middle {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 39.9375em) {
+    .cv-container{
+        width: 95%;
+    }
+
+    .cv-dl-container {
+       width: 95%; 
+    }
+
+    .middle-grid{
+        width: 95%;
+        min-width: 414px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
   }

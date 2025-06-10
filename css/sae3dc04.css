@@ -1,0 +1,148 @@
+.orbit-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    /* background: url("../data/img/background\ sae201.jpg") center/cover no-repeat; */
+    background-size: 150vh;
+    display: flex;
+    justify-content: center;
+}
+
+.orbit .orbit-container .topbar-responsive .menu {
+    padding: 0.7rem 1rem;
+}
+
+.middle-grid {
+    width: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: end;
+    grid-gap: 0 20px;
+    grid-template-areas: 
+        "intro img"
+        "desc img";
+}
+
+.introduction-area {
+    width: 35rem;
+    grid-area: intro;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.introduction-area h1 {
+    color: white;
+}
+
+.description-area {
+    width: 35rem;
+    grid-area: desc;
+}
+
+.img-area {
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: #b5b3e8dd 10px solid;
+    box-shadow: 1px 1px 6px 0px #806fdb;
+    object-fit: cover;
+}
+
+.technical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 25px 0 25px 0;
+}
+
+.schema-area {
+    width: 55rem;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.desc-schema {
+    justify-items: center;
+    width: 40rem;
+    height: 100%;
+    margin-left: 25px;
+}
+
+.desc-schema .grid-container {
+    margin-top: 25px;
+}
+
+.desc-schema h3 {
+    height: auto;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+
+/* Disposition téléphone */
+
+@media screen and (max-width: 85.9375em) {
+    .middle-grid {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "intro"
+            "desc"
+            "img";
+        align-content: center;
+        justify-items: center;
+    }
+
+    .introduction-area, .description-area, .img-area, .desc-schema {
+        margin: 0 0 40px 0;
+        width: 100%;
+    }
+
+    .technical {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .schema-area {
+        width: 87%;
+    }
+
+  }
+
+
+  @media screen and (max-width: 39.9375em) {
+    .middle-grid {
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .introduction{
+        justify-content: center;
+    }
+    .middle {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .img-area {
+        padding: 10px;
+    }
+  }

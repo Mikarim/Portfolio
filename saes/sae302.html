@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAÉ302 - Bazzaro Mikael</title>
+    <link rel="shortcut icon" href="/data/img/codepen.svg" type="image/x-icon">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/header&footer.css">
+    <link rel="stylesheet" href="/css/sae302.css">
+    <link rel="stylesheet" href="/css/resizer.css">
+  </head>
+
+  <header>
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures">
+      <div class="orbit-container">
+        <nav class="top-bar topbar-responsive">
+          <div class="top-bar-title">
+            <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+              <button class="menu-icon" type="button" data-toggle></button>
+            </span>
+          </div>
+          <div id="topbar-responsive" class="topbar-responsive-links">
+            <div class="top-bar-left">
+              <ul class="menu simple vertical medium-horizontal">
+                <li><a class="text-topbar" href="/cv.html"><i class="fa-regular fa-file-lines">&nbsp</i>CV</a></li>
+                <li><a class="text-topbar" href="/contact.html"><i class="fa-regular fa-comments">&nbsp</i>Contact</a></li>
+                <li><a class="text-topbar" href="/index.html"><i class="fa-solid fa-house">&nbsp</i>Accueil</a></li>
+                <li><a class="text-topbar" href="/stage.html"><i class="fa-solid fa-magnifying-glass">&nbsp</i>Stage</a></li>
+                <li class="deroulant">
+                  <a class="iconfleche" href="#"><i class="fa-solid fa-network-wired">&nbsp</i>Projets</a>
+                  <ul class="lst-projets">
+                    <li><a href="/saes/sae201.html">SAÉ201</a></li>
+                    <li><a href="">SAÉ302</a></li>
+                    <li><a href="/saes/sae3dc04.html">SAÉdc304</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <body>
+        <div id="myModal1" class="modal">
+            <img class="modal-content" id="img01">
+        </div>
+        <div id="myModal2" class="modal">
+            <img class="modal-content" id="img02">
+        </div>
+          <div class="middle">
+            <section class="middle-grid">
+              <div class="introduction-area">
+                <article class="grid-container">
+                  <div class="flex">
+                    <h1><i class="fa-brands fa-java">&nbsp</i><strong>SAE302</strong></h1>
+                    <p><strong>Développer une application communiquante</strong></p>
+                    <p>
+                        Développement d'une application graphique basé sur la communication client-serveur (avec sérialisation json et socket TCP en java)
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="description-area">
+                <article class="grid-container">
+                  <p>L’objectif de ce projet est de mettre en place une <strong>plateforme de communication pour différents clients</strong> L’outil est composé de : </p>
+                  <br>
+                  <ul>
+                    <li>Un serveur en java assurant la communication des clients</li>
+                    <li>Une application graphique dédiée aux clients en javaFx</li>
+                  </ul>
+                  <br>
+                  <p>Pour développer cette application, j'ai eu <strong>une période de 3 mois</strong>, partant de zéro pour réaliser ces différentes étapes :</p>
+                  <br>
+                  <ul>
+                    <li>Création de l'interface graphique (javaFx)</li>
+                    <li>Gestion des contacts, du modèle des messages et des posts</li>
+                    <li>Création d'un serveur de chat basique</li>
+                    <li>Évènements réseaux (propre protocole de communication)</li>
+                    <li>Gestion des salons</li>
+                    <li>Gestion des notifications</li>
+                    <li>Package de l'application</li>
+                  </ul>
+                </article>
+              </div>
+              <div class="img-area">
+                <img id="myImg1" class="img" src="/data/img/chatapp-sae302.png" alt="application graphique">
+              </div>
+            </section>
+            <section class="technical">
+              <div class="schema-area">
+                <img id="myImg2" class="schema" src="/data/img/schéma-sae302.png" alt="schéma du projet">
+              </div>
+              <div class="desc-schema">
+                <article class="grid-container">
+                  <p>
+                    Les <strong>utilisateurs</strong> de l'application sont identifiés par un <strong>login</strong> et peuvent se choisir un <strong>avatar</strong>. Ils sont <strong>authentifiés</strong> par le <strong>serveur</strong>, qui gère un <strong>annuaire des logins autorisés</strong> à se connecter.
+                    <br>
+                    Les utilisateurs peuvent discuter en <strong>privé</strong> avec un autre utilisateur ou dans des <strong>salons de discussion publics</strong> regroupant plusieurs utilisateurs. Les <strong>salons disponibles</strong> seront gérés par le serveur, qui recense également les <strong>utilisateurs autorisés</strong> à poster dans un salon.
+                    <br>
+                </p>
+                </article>
+                <article class="grid-container">
+                  <h3><i class="fa-solid fa-paper-plane"></i> Évènements JSON</h3>
+                  <p>Les échanges réseaux s’appuient sur un protocole standardisé utilisant des évènements sous la forme de données JSON.</p>
+                  <br>
+                  <article class="grid-container">
+                    <p><i>Exemple : Évènement client→serveur : demande d’authentification avec le login <strong>minnie.</strong></i></p>
+                    <br>
+                    <p><strong>{"type":"AUTH","content":{"login":"minnie"}}</strong></p>
+                    <br>
+                    <p><i>Exemple : Évènement client→serveur : envoi d’un message privé à <strong>daisy.</strong></i></p>
+                    <br>
+                    <p><strong>{"type":"MESG","content":{"to":"daisy","body":"Hey!"}}</strong></p>
+                  </article>
+                </article>
+              </div>
+            </section>
+            <section class="bilan-container">
+              <article class="grid-container">
+                <h3><i class="fa-solid fa-comment"></i> Bilan personnel</h3>
+                <p>
+                    Ce projet d'<strong>application de messagerie client-serveur</strong> a été l'un des plus passionnants que j'ai réalisés, malgré le temps considérable investi et les nombreux <strong>bugs rencontrés</strong> lors du développement de la <strong>réception des messages</strong> et du <strong>protocole de communication JSON</strong>. La création complète d'un <strong>système de chat</strong> avec <strong>gestion des utilisateurs</strong>, <strong>salons publics</strong>, <strong>messages privés</strong> et <strong>authentification</strong> m'a permis d'approfondir mes compétences en <strong>programmation Java</strong> et en <strong>architecture réseau</strong>. Bien que techniquement exigeant, ce projet m'a procuré une grande <strong>satisfaction personnelle</strong> en voyant l'application prendre vie et fonctionner, renforçant ma passion pour le <strong>développement d'applications</strong>.
+                </p>
+              </article>
+            </section>
+          </div>
+        </body>
+      </div>
+    </div>
+  </header>  
+
+  
+  <section class="footer-box">
+    <div class="footer-container">
+      <article class="grid-container">
+        <footer class="callout large secondary">
+          <article class="grid-container">
+          <div class="grid-x">
+            <div class="contact">
+              <p><i class="fa-solid fa-arrow-up-right-from-square">&nbsp&nbsp</i><a href="./contact.html">contact par mail</a></p>
+            </div>
+            <div class="reseaux">
+              <ul class="menu vertical">
+                <li><a href="https://github.com/Mikarim"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mikael-bazzaro-b242092b5/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/mikael_bzr/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <li><a href="#"><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <p class="copyright"><i class="fa-regular fa-copyright">&nbsp&nbsp</i>Copyright 2024 Mikael Bazzaro - Tous droits réservés</p>
+        <p class="copyright">Dernière modification le 09/06/2025</p>
+      </article>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+  <script src="https://kit.fontawesome.com/9f184c18ec.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script src="./data/js/topbar.js"></script>
+  <script>
+    var modal1 = document.getElementById('myModal1');
+    var modal2 = document.getElementById('myModal2');
+
+    var img1 = document.getElementById('myImg1');
+    var modalImg1 = document.getElementById("img01");
+    var captionText1 = document.getElementById("caption1");
+    img1.onclick = function(){
+        modal1.style.display = "block";
+        modalImg1.src = this.src;
+        modalImg1.alt = this.alt;
+        captionText1.innerHTML = this.alt;
+    }
+
+    var img2 = document.getElementById('myImg2');
+    var modalImg2 = document.getElementById("img02");
+    var captionText2 = document.getElementById("caption2");
+    img2.onclick = function(){
+        modal2.style.display = "block";
+        modalImg2.src = this.src;
+        modalImg2.alt = this.alt;
+        captionText2.innerHTML = this.alt;
+    }
+
+    modal1.onclick = function() {
+        modalImg1.className += " out";
+        setTimeout(function() {
+        modal1.style.display = "none";
+        modalImg1.className = "modal-content";
+        }, 400);
+        
+    }
+
+    modal2.onclick = function() {
+        modalImg2.className += " out";
+        setTimeout(function() {
+        modal2.style.display = "none";
+        modalImg2.className = "modal-content";
+        }, 400);
+        
+    } 
+  </script>
+</html>

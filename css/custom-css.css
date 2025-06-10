@@ -164,6 +164,7 @@ h1 {
 
 .middle-grid-container{
   display: flex;
+  justify-content: center;
 }
 
 .deco {
@@ -239,7 +240,6 @@ h1 {
   border-radius: 25px;
   margin-bottom: 50px;
   animation: fadeIn 0.5s ease-in-out, slideDown 0.5s ease-in-out;
-
 }
 
 .anim-on-start {
@@ -299,6 +299,16 @@ h1 {
   width: 30rem;
 }
 
+.pdp {
+  align-items: center;
+  height: 250px;
+  width: auto;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  border: white 3px solid;
+  border-radius: 50px;
+}
+
 @media screen and (max-width: 85.9375em) {
   .orbit-container{
     height: auto;
@@ -320,15 +330,6 @@ h1 {
   .jobs-description p{
     margin: 0px;
   }
-}
-.pdp {
-  align-items: center;
-  height: 250px;
-  width: auto;
-  margin: 0 auto 0 auto;
-  text-align: center;
-  border: white 3px solid;
-  border-radius: 50px;
 }
 
 
